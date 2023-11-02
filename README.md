@@ -99,7 +99,7 @@ I have spent six years resisting the urge to make a starter template because (a)
 
 But in the spirit of deploying high quality work, this repo contains a few best practices and useful tools for Django projects.
 
-These features would take a while to get set up from scratch, and might not be worth it for every project. But cloning this starter template can save you roughly a full day of work.
+These features would take a while to get set up from scratch, and might not be worth it for every project. But cloning this starter template can save you roughly a full day of work if you're planning to extend the built-in user authentication.
 
 Most importantly, though, no Bootstrap styling was used in the making of this template.
 
