@@ -56,8 +56,8 @@ Then, here are some areas you'll likely want to customize:
 - A test which checks if there are migrations to run
 - Template directory in `BASE_DIR / "templates"`
 - Templates for authentication URLs in `templates/registration/`
-- A header template partial
-- A base template
+- A header template partial in `templates/partials/header.html`
+- A base template in `templates/base.html`
 - Plain old CSS, powered by
   - [Every Layout](https://every-layout.dev/) primitives
   - CSS variables for colors and spacing
