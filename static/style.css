@@ -59,6 +59,13 @@ footer {
   max-width: none;
 }
 
+footer,
+header,
+main,
+nav {
+  display: block;
+}
+
 img {
   max-width: 100%;
 }
@@ -74,7 +81,6 @@ ul {
 h1 {
   font-size: var(--s3);
   line-height: normal;
-  text-align: center;
 }
 
 h2 {
@@ -220,13 +226,25 @@ button,
   text-decoration: none;
   cursor: pointer;
   padding: var(--s-1) var(--s1);
+  max-width: fit-content;
   border: 0 solid;
   border-radius: var(--border-radius);
   outline: var(--border-thin) solid transparent;
   /* for showing shape in high contrast mode */
   outline-offset: calc(var(--border-thin) * -1);
-  color: var(--color-light) !important;
+  color: var(--color-light);
   background-color: var(--color-accent);
+}
+
+.box button,
+.box .button {
+  color: var(--color-light);
+}
+
+.button.bare {
+  background-color: unset;
+  color: unset;
+  text-decoration: underline;
 }
 
 button:hover,
