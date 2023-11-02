@@ -7,7 +7,7 @@ Main features:
 - Formatters and linters configured with pre-commit
 - and [more](#features)
 
-For more explanation, see [](#why-make-a-template) below.
+For more explanation, see [Why make a template?](#why-make-a-template) below.
 
 ## How to use `djarter`
 
