@@ -64,6 +64,17 @@ nav {
   display: block;
 }
 
+main > * {
+  display: block;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  max-width: 35rem;
+}
+
+main > * + * {
+  margin-block-start: var(--s0);
+}
+
 img {
   max-width: 100%;
 }
