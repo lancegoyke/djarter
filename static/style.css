@@ -80,6 +80,10 @@ footer {
   justify-content: center;
 }
 
+footer a {
+  font-size: inherit;
+}
+
 img {
   max-width: 100%;
 }
