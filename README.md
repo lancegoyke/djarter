@@ -131,6 +131,8 @@ Similarly, there is a success message when a password is changed, but the user i
 
 ### Style
 
+First we will discuss [why this template isn't using a more popular `CSS` framework](#css-frameworks), then we will discuss [how you can use the included `CSS` to make this project your own](#styling-to-your-liking).
+
 #### CSS frameworks
 
 I have used packages like [`Bootstrap`](https://getbootstrap.com/), [`Bulma`](https://bulma.io/), and [`Tailwind`](https://tailwindcss.com/) in the past, and I like them, but I don't like using them. I feel like they make me spend a bunch of time learning a framework instead of learning **CSS**.
