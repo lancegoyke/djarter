@@ -103,6 +103,32 @@ These features would take a while to get set up from scratch, and might not be w
 
 Most importantly, though, no Bootstrap styling was used in the making of this template.
 
+### User Authentication
+
+#### The `CustomUser` model
+
+There's a custom user model located at `users.models.CustomUser`.
+
+For most projects, I find the `username` field unnecessary, so it is set to `None`.
+
+Instead, the "username field" is set to `email`.
+
+#### Social authentication and `django-allauth`
+
+`django-allauth` is included because I often find myself using it to enable authentication with social media accounts.
+
+Social authentication is not enabled by default.
+
+#### Authentication views
+
+I have found that I don't like using `django.contrib.auth` views or `allauth` views as they are set because I would prefer to customize the messages on these pages to fit the brand of the site.
+
+As such, these views have been extended. See them in `users/views.py` and `users/urls.py`.
+
+There is no "confirm logout" page. When clicking through to the logout view, the user is logged out and redirected to the home page. You can change with with the `success_url`.
+
+Similarly, there is a success message when a password is changed, but the user is redirected to the home page. You can change the redirect with `success_url` and the message in `get_success_url()`.
+
 ### Style
 
 #### CSS frameworks
