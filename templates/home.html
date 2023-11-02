@@ -4,6 +4,14 @@
 {% endblock title %}
 {% block content %}
   <h1>djarter</h1>
+  <p>A Django starter template including...</p>
+  <ul>
+    <li>A custom user model with email, no username, and auth views</li>
+    <li>CSS layout primitives instead of CSS frameworks</li>
+    <li>Django template hot reload</li>
+    <li>Formatters and linters ready for pre-commit</li>
+    <li>And more!</li>
+  </ul>
   {% if user.is_authenticated %}
     <p>Hi {{ user.email }}!</p>
     <p>
