@@ -75,6 +75,11 @@ main > * + * {
   margin-block-start: var(--s0);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -433,4 +438,27 @@ header .cluster {
 
 .no-border {
   border: none;
+}
+
+/*
+  Utilities
+*/
+.font-size\:bigger {
+  font-size: var(--s2);
+}
+
+.font-size\:big {
+  font-size: var(--s1);
+}
+
+.font-size\:regular {
+  font-size: var(--s0);
+}
+
+.font-size\:small {
+  font-size: var(--s-1);
+}
+
+.font-size\:smaller {
+  font-size: var(--s-2);
 }
