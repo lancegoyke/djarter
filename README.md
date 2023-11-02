@@ -11,6 +11,17 @@ For more explanation, see [Why make a template?](#why-make-a-template) below.
 
 ## How to use `djarter`
 
+Overview:
+
+#. "Use this template" on GitHub
+#. `python -m venv .venv`
+#. `source .venv/bin/activate` (Unix/Linux/Mac) or `.\.venv\Scripts\Activate.ps1` (Windows)
+#. `python -m pip install -r requirements.txt`
+#. `python manage.py migrate`
+#. `python manage.py createsuperuser`
+#. `python manage.py runserver`
+#. [Customize](#customizations) for your project
+
 ### Make a copy of the template
 
 Click the green "Use this template" button on the repository page. This creates a shallow copy, making a new repository with a single commit under your account.
