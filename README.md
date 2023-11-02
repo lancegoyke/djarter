@@ -49,6 +49,7 @@ Then, here are some areas you'll likely want to customize:
 - [ ] Edit your site name in the Django sites framework from within the admin at http://127.0.0.1:8000/backside; this value is used when sending password reset emails
 - [ ] `cp .env-example .env` and adjust values
 - [ ] Update the meta description and keywords in `templates/base.html`
+- [ ] Alter the main menu in `templates/partials/header.html`
 
 ## Features included
 
