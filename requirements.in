@@ -2,7 +2,7 @@ django>=4.2
 django-allauth
 django-browser-reload
 django-debug-toolbar
+django-watchfiles
 djlint
 environs
 pip-tools
-pywatchman

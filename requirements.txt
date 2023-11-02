@@ -4,6 +4,8 @@
 #
 #    pip-compile
 #
+anyio==4.0.0
+    # via watchfiles
 asgiref==3.7.2
     # via django
 build==1.0.3
@@ -32,11 +34,14 @@ django==4.2.6
     #   django-allauth
     #   django-browser-reload
     #   django-debug-toolbar
+    #   django-watchfiles
 django-allauth==0.58.1
     # via -r requirements.in
 django-browser-reload==1.12.0
     # via -r requirements.in
 django-debug-toolbar==4.2.0
+    # via -r requirements.in
+django-watchfiles==0.1.0
     # via -r requirements.in
 djlint==1.34.0
     # via -r requirements.in
@@ -51,7 +56,9 @@ html-tag-names==0.1.2
 html-void-elements==0.1.0
     # via djlint
 idna==3.4
-    # via requests
+    # via
+    #   anyio
+    #   requests
 jsbeautifier==1.14.9
     # via
     #   cssbeautifier
@@ -73,17 +80,13 @@ pip-tools==7.3.0
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.8.0
-    # via
-    #   django-allauth
-    #   pyjwt
+    # via django-allauth
 pyproject-hooks==1.0.0
     # via build
 python-dotenv==1.0.0
     # via environs
 python3-openid==3.2.0
     # via django-allauth
-pywatchman==1.4.1
-    # via -r requirements.in
 pyyaml==6.0.1
     # via djlint
 regex==2023.10.3
@@ -98,6 +101,8 @@ six==1.16.0
     # via
     #   cssbeautifier
     #   jsbeautifier
+sniffio==1.3.0
+    # via anyio
 sqlparse==0.4.4
     # via
     #   django
@@ -106,6 +111,8 @@ tqdm==4.66.1
     # via djlint
 urllib3==2.0.7
     # via requests
+watchfiles==0.21.0
+    # via django-watchfiles
 wheel==0.41.3
     # via pip-tools
 

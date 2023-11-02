@@ -26,8 +26,9 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-    "django_browser_reload",
     "debug_toolbar",
+    "django_browser_reload",
+    "django_watchfiles",
 ]
 
 MIDDLEWARE = [
