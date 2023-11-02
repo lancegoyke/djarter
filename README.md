@@ -213,6 +213,10 @@ Links should be underlined to make them more accessible.
 
 Hover states are noted with a simple opacity change.
 
+## Pull requests welcome
+
+This project is still in its early stages. If you have any improvements you believe to be obvious, feel free to open an issue to discuss!
+
 ## Other Django starters you might like
 
 - [`DjangoX`](https://github.com/wsvincent/djangox)
