@@ -3,27 +3,29 @@
   Home
 {% endblock title %}
 {% block content %}
-  <h1>djarter</h1>
-  <p>A Django starter template including...</p>
-  <ul>
-    <li>A custom user model with email, no username, and auth views</li>
-    <li>CSS layout primitives instead of CSS frameworks</li>
-    <li>Django template hot reload</li>
-    <li>Formatters and linters ready for pre-commit</li>
-    <li>And more!</li>
-  </ul>
-  {% if user.is_authenticated %}
-    <p>Hi {{ user.email }}!</p>
-    <p>
-      <a href="{% url 'accounts:logout' %}">Log Out</a> |
-      <a href="{% url 'accounts:password_change' %}">Change Password</a>
-    </p>
-  {% else %}
-    <p>You are not logged in</p>
-    <p>
-      <a href="{% url 'accounts:login' %}">Log In</a> |
-      <a href="{% url 'accounts:signup' %}">Sign Up</a> |
-      <a href="{% url 'accounts:password_reset' %}">Reset Password</a>
-    </p>
-  {% endif %}
+  <div class="stack center">
+    <h1>djarter</h1>
+    <p>A Django starter template including...</p>
+    <ul>
+      <li>A custom user model with email, no username, and auth views</li>
+      <li>CSS layout primitives instead of CSS frameworks</li>
+      <li>Django template hot reload</li>
+      <li>Formatters and linters ready for pre-commit</li>
+      <li>And more!</li>
+    </ul>
+    {% if user.is_authenticated %}
+      <p>Hi {{ user.email }}!</p>
+      <p>
+        <a href="{% url 'accounts:logout' %}">Log Out</a> |
+        <a href="{% url 'accounts:password_change' %}">Change Password</a>
+      </p>
+    {% else %}
+      <p>You are not logged in</p>
+      <p>
+        <a href="{% url 'accounts:login' %}">Log In</a> |
+        <a href="{% url 'accounts:signup' %}">Sign Up</a> |
+        <a href="{% url 'accounts:password_reset' %}">Reset Password</a>
+      </p>
+    {% endif %}
+  </div>
 {% endblock content %}

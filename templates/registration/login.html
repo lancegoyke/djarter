@@ -3,13 +3,15 @@
   Log In
 {% endblock title %}
 {% block content %}
-  <h1>Log In</h1>
-  <form class="stack" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <div class="cluster">
-      <button type="submit">Log In</button>
-      <a class="button bare" href="{% url 'accounts:password_reset' %}">Forgot Password</a>
-    </div>
-  </form>
+  <div class="stack center">
+    <h1>Log In</h1>
+    <form class="stack" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="cluster">
+        <button type="submit">Log In</button>
+        <a class="button bare" href="{% url 'accounts:password_reset' %}">Forgot Password</a>
+      </div>
+    </form>
+  </div>
 {% endblock content %}
