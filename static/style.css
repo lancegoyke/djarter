@@ -155,7 +155,7 @@ select {
   border: var(--border-thin) solid;
   border-radius: var(--border-radius);
   color: var(--color-dark);
-  background-color: var(--color-light);
+  background-color: #fff;
 }
 
 input *,
@@ -165,7 +165,7 @@ textarea * {
 
 input:disabled,
 textarea:disabled {
-  background: var(--color-accent);
+  background: #ddd;
   font-style: italic;
 }
 
