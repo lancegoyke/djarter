@@ -3,6 +3,7 @@
   Home
 {% endblock title %}
 {% block content %}
+  <h1>Django Workout</h1>
   {% if user.is_authenticated %}
     <p>Hi {{ user.email }}!</p>
     <p>
@@ -11,8 +12,10 @@
     </p>
   {% else %}
     <p>You are not logged in</p>
-    <a href="{% url 'accounts:login' %}">Log In</a> |
-    <a href="{% url 'accounts:signup' %}">Sign Up</a> |
-    <a href="{% url 'accounts:password_reset' %}">Reset Password</a>
+    <p>
+      <a href="{% url 'accounts:login' %}">Log In</a> |
+      <a href="{% url 'accounts:signup' %}">Sign Up</a> |
+      <a href="{% url 'accounts:password_reset' %}">Reset Password</a>
+    </p>
   {% endif %}
 {% endblock content %}
