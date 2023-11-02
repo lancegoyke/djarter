@@ -42,6 +42,8 @@ Then, here are some areas you'll likely want to customize:
 - [ ] `cp .env-example .env` and adjust values
 - [ ] Update the meta description and keywords in `templates/base.html`
 - [ ] Alter the main menu in `templates/partials/header.html`
+- [ ] Install [`pre-commit`](https://pre-commit.com/)
+- [ ] `pre-commit install` to register your Git Hook to run the pre-commit formatters, linters, and checks
 
 ## Features included
 
