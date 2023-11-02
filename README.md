@@ -103,7 +103,17 @@ These features would take a while to get set up from scratch, and might not be w
 
 Most importantly, though, no Bootstrap styling was used in the making of this template.
 
+### Summary of usefulness
+
+This template is likely useful to you if:
+
+- your app requires non-admin user registration
+- you want pre-commit enabled for code quality
+- you want to avoid using CSS frameworks
+
 ### User Authentication
+
+If your app doesn't require user registration, then this template is probably not exactly what you want.
 
 #### The `CustomUser` model
 
