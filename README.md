@@ -12,11 +12,11 @@ Most importantly, though, no Bootstrap styling was used in the making of this te
 
 ### Make a copy of the template
 
-Click the green "Use this template" button on the repository page. This creates a shallow copy, making a new repository with a single commit.
+Click the green "Use this template" button on the repository page. This creates a shallow copy, making a new repository with a single commit under your account.
 
 ### Setup the database
 
-The template is ready to use SQLite.
+The template is ready to use SQLite for your database out of the box.
 
 ```shell
 python manage.py migrate
@@ -47,6 +47,7 @@ Then, here are some areas you'll likely want to customize:
 - `pyproject.toml` contains project info
 - `static/style.css` has CSS variables at the top of the file
 - Edit your site name in the Django sites framework from within the admin at http://127.0.0.1:8000/backside
+- `cp .env-example .env` and adjust values
 
 ## Features included
 
@@ -61,6 +62,7 @@ Then, here are some areas you'll likely want to customize:
   - CSS variables for colors and spacing
   - ZERO @media queries 🙌
   - ZERO Bootstrap
+  - ZERO TailwindCSS
 - [`pip-tools`](https://github.com/jazzband/pip-tools) for managing dependencies
 - [`.editorconfig`](https://editorconfig.org/) to give your editor or IDE some guidelines
 - `.env` enabled through the [`environs`](https://pypi.org/project/environs/) package
