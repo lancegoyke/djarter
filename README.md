@@ -6,7 +6,7 @@
 Main features:
 
 - Custom User model with email, no username, includes auth views
-- Every Layout CSS primitives (no Bootstrap!)
+- CSS layout primitives instead of CSS frameworks (no Bootstrap!)
 - Formatters and linters configured with pre-commit
 - and [more](#features)
 
