@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {% endblock title %}
+      | Django Workout
+    </title>
+    <meta name="description"
+          content="{% block meta_description %}{% endblock meta_description %}">
+    <meta name="keywords" content="django, web development, python">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main class="box no-border">
+      {% if messages %}
+        <div class="messages">
+          <ul>
+            {% for message in messages %}
+              <li class="box {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {% block content %}
+      {% endblock content %}
+    </main>
+  </body>
+</html>

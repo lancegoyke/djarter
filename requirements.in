@@ -1,0 +1,8 @@
+django>=4.2
+django-allauth
+django-browser-reload
+django-debug-toolbar
+djlint
+environs
+pip-tools
+pywatchman
