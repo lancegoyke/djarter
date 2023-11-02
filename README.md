@@ -2,7 +2,7 @@
 
 Main features:
 
-- Custom User model with auth views
+- Custom User model with email, no username, includes auth views
 - Every Layout CSS primitives (no Bootstrap!)
 - Formatters and linters configured with pre-commit
 - and [more](#features)
@@ -67,7 +67,7 @@ Then, here are some areas you'll likely want to customize:
 
 ## Features
 
-- Custom user model in at `users.CustomUser` with tests
+- Custom user model at `users.CustomUser` using unique emails and no username
 - A test which checks if there are migrations to run
 - Template directory in `BASE_DIR / "templates"`
 - Templates for authentication URLs in `templates/registration/`
