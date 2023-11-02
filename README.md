@@ -7,7 +7,8 @@ Main features:
 
 - Custom User model with email, no username, includes auth views
 - CSS layout primitives instead of CSS frameworks (no Bootstrap!)
-- Formatters and linters configured with pre-commit
+- Django template hot reload! Yay!
+- Formatters and linters configured with pre-commit! #code-quality
 - and [more](#features)
 
 For more explanation, see [Why make a template?](#why-make-a-template) below.
