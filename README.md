@@ -1,5 +1,14 @@
 # `djarter` – An opinionated Django starter project
 
+Main features:
+
+- Custom User model with auth views
+- Every Layout CSS primitives (no Bootstrap!)
+- Formatters and linters configured with pre-commit
+- and [more](#features)
+
+For more explanation, see [](#why-make-a-template) below.
+
 ## How to use `djarter`
 
 ### Make a copy of the template
@@ -45,7 +54,7 @@ Then, here are some areas you'll likely want to customize:
 - [ ] Install [`pre-commit`](https://pre-commit.com/)
 - [ ] `pre-commit install` to register your Git Hook to run the pre-commit formatters, linters, and checks
 
-## Features included
+## Features
 
 - Custom user model in at `users.CustomUser` with tests
 - A test which checks if there are migrations to run
