@@ -3,12 +3,10 @@
   Sign Up
 {% endblock title %}
 {% block content %}
-  <div class="stack center">
-    <h1>Sign Up</h1>
-    <form class="stack" method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <button type="submit">Sign Up</button>
-    </form>
-  </div>
+  <h1>Sign Up</h1>
+  <form class="stack" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+  </form>
 {% endblock content %}
