@@ -13,14 +13,14 @@ For more explanation, see [Why make a template?](#why-make-a-template) below.
 
 Overview:
 
-#. "Use this template" on GitHub
-#. `python -m venv .venv`
-#. `source .venv/bin/activate` (Unix/Linux/Mac) or `.\.venv\Scripts\Activate.ps1` (Windows)
-#. `python -m pip install -r requirements.txt`
-#. `python manage.py migrate`
-#. `python manage.py createsuperuser`
-#. `python manage.py runserver`
-#. [Customize](#customizations) for your project
+1. "Use this template" on GitHub
+1. `python -m venv .venv`
+1. `source .venv/bin/activate` (Unix/Linux/Mac) or `.\.venv\Scripts\Activate.ps1` (Windows)
+1. `python -m pip install -r requirements.txt`
+1. `python manage.py migrate`
+1. `python manage.py createsuperuser`
+1. `python manage.py runserver`
+1. [Customize](#customizations) for your project
 
 ### Make a copy of the template
 
