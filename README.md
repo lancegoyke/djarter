@@ -95,7 +95,7 @@ Then, here are some areas you'll likely want to customize:
 
 ## Why make a template?
 
-I have spent six years resisting the urge to make a starter template because (a) it locks you in to a particular development style, and (b) it prevents repetition which promotes learning.
+I have spent six years resisting the urge to make a starter template because (a) it locks you in to a particular development style, and (b) it prevents the repetition that promotes learning.
 
 But in the spirit of deploying high quality work, this repo contains a few best practices and useful tools for Django projects.
 
