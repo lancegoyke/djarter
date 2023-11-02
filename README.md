@@ -152,9 +152,19 @@ Enter, [Every Layout](https://every-layout.dev/), which taught me how to write C
 
 Again, these are all wonderful tools! But if you're comfortable with CSS, I think this is a better starting point.
 
-#### Styling
+#### Styling to your liking
 
 When left to my own devices, I find I'm likely to *over*design, meaning a make something too complicated and too messy to be pretty.
+
+In hopes of preventing this, here are some main ideas and simplifications regarding styling with this template.
+
+- [Variables](#variables)
+- [Main menu](#main-menu)
+- [Modular scale](#modular-scale)
+- [Unset most browser defaults](#unset-most-browser-defaults)
+- [Buttons](#buttons)
+- [Boxes](#boxes)
+- [Accessibility of interactive elements](#accessibility-of-interactive-elements)
 
 ##### Variables
 
@@ -195,7 +205,7 @@ You can create boxes of information with:
 - `<div class="box">`
 - `<div class="box invert">`
 
-##### Accessibility of interactive elements, e.g., links and buttons
+##### Accessibility of interactive elements
 
 Links should be underlined to make them more accessible.
 
