@@ -8,17 +8,23 @@
 {% block content %}
   <h1>Example Form</h1>
   <p>This page shows how multiple form inputs get rendered.</p>
-  <form class="stack" method="get">
+  <p>
+    This is meant to be run with `form.as_div`. The div tags contain each field's label, help text, and input/textarea/select/etc.
+  </p>
+  <p>
+    We can target this div container, display as a flexbox column, and standardize the spacing within and between these fields.
+  </p>
+  <form class="stack" method="post">
     {% csrf_token %}
-    {{ form }}
+    {{ form.as_div }}
     <h2>Your Favorite Books</h2>
     {{ book_formset.management_form }}
     {% for book_form in book_formset %}
-      <fieldset>
+      <fieldset class="box">
         <legend>Book {{ forloop.counter }}</legend>
-        {{ book_form }}
+        {{ book_form.as_div }}
       </fieldset>
     {% endfor %}
-    <button type="submit">GET</button>
+    <button type="submit">Submit</button>
   </form>
 {% endblock content %}

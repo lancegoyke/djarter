@@ -183,6 +183,12 @@ textarea * {
   color: inherit;
 }
 
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
 input:disabled,
 textarea:disabled {
   background: #ddd;
@@ -204,7 +210,7 @@ input[type="checkbox"] {
   color: var(--color-dark);
   width: 1.15em;
   height: 1.15em;
-  transform: translateY(-0.175em);
+  /* transform: translateY(-0.175em); */
   display: grid;
   place-content: center;
 }
@@ -233,6 +239,25 @@ input[type="checkbox"]:focus {
 input[type="checkbox"]:disabled {
   color: #959495;
   cursor: not-allowed;
+}
+
+label {
+  font-weight: 700;
+}
+
+fieldset {
+  padding: var(--s1);
+  border: var(--border-thin) solid;
+  outline: var(--border-thin) solid transparent;
+  outline-offset: calc(var(--border-thin) * -1);
+}
+
+legend {
+  padding: 0 var(--s-3);
+}
+
+.helptext {
+  font-size: var(--s-1);
 }
 
 /*

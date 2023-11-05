@@ -20,14 +20,24 @@ class ExampleForm(forms.Form):
         ],
         widget=forms.RadioSelect,
     )
+    favorite_scandanavian_country = forms.ChoiceField(
+        label="Your favorite Scandinavian country",
+        choices=[
+            ("SE", "Sweden"),
+            ("NO", "Norway"),
+            ("FI", "Finland"),
+            ("DK", "Denmark"),
+        ],
+        widget=forms.Select,
+    )
     homepage = forms.URLField(
         label="Your homepage",
         max_length=100,
         required=False,
         help_text="Optional",
     )
-    number = forms.IntegerField(
-        label="Your number",
+    favorite_number = forms.IntegerField(
+        label="Your favorite number",
         min_value=1,
         max_value=10,
         help_text="Select a number from 1 to 10",
