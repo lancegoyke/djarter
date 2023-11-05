@@ -9,7 +9,16 @@
   <h1>Example Form</h1>
   <p>This page shows how multiple form inputs get rendered.</p>
   <form class="stack" method="get">
+    {% csrf_token %}
     {{ form }}
+    <h2>Your Favorite Books</h2>
+    {{ book_formset.management_form }}
+    {% for book_form in book_formset %}
+      <fieldset>
+        <legend>Book {{ forloop.counter }}</legend>
+        {{ book_form }}
+      </fieldset>
+    {% endfor %}
     <button type="submit">GET</button>
   </form>
 {% endblock content %}

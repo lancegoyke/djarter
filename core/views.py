@@ -56,12 +56,34 @@ class ExampleForm(forms.Form):
     )
 
 
+class BookForm(forms.Form):
+    title = forms.CharField(label="Title", max_length=100, required=True)
+    author = forms.CharField(label="Author", max_length=100, required=True)
+    description = forms.CharField(label="Description", max_length=1000, required=True)
+
+
+BookFormSet = forms.formset_factory(
+    form=BookForm,
+    extra=3,
+)
+
+
 def example_form(request):
     if request.method == "POST":
         form = ExampleForm(request.POST)
         if form.is_valid():
             print(form.cleaned_data)
-            return render(request, "example_form.html", {"form": form})
+            book_formset = BookFormSet(request.POST)
+            if book_formset.is_valid():
+                print(book_formset.cleaned_data)
+            return render(
+                request,
+                "example_form.html",
+                {"form": form, "book_formset": book_formset},
+            )
     else:
         form = ExampleForm()
-    return render(request, "example_form.html", {"form": form})
+        book_formset = BookFormSet()
+    return render(
+        request, "example_form.html", {"form": form, "book_formset": book_formset}
+    )
