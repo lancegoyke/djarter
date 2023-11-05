@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+  Example Form
+{% endblock title %}
+{% block meta_description %}
+  A page showing what form fields might look like.
+{% endblock meta_description %}
+{% block content %}
+  <h1>Example Form</h1>
+  <p>This page shows how multiple form inputs get rendered.</p>
+  <form class="stack" method="get">
+    {{ form }}
+    <button type="submit">GET</button>
+  </form>
+{% endblock content %}
