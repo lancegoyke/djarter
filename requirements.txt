@@ -28,7 +28,7 @@ cssbeautifier==1.14.9
     # via djlint
 defusedxml==0.7.1
     # via python3-openid
-django==4.2.6
+django==4.2.7
     # via
     #   -r requirements.in
     #   django-allauth
@@ -80,7 +80,9 @@ pip-tools==7.3.0
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.8.0
-    # via django-allauth
+    # via
+    #   django-allauth
+    #   pyjwt
 pyproject-hooks==1.0.0
     # via build
 python-dotenv==1.0.0
