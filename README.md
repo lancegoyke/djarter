@@ -5,6 +5,8 @@
 
 ![Screenshot of `djarter` Django starter template](screenshot-wide.png)
 
+![Screenshot - rendering a form with many types of fields showing even spacing](https://docs.djangoproject.com/en/4.2/ref/forms/api/#as-div)
+
 Main features:
 
 - Custom User model with email, no username, includes auth views
@@ -79,9 +81,10 @@ Then, here are some areas you'll likely want to customize:
 - Templates for authentication URLs in `templates/registration/`
 - A header template partial in `templates/partials/header.html`
 - A base template in `templates/base.html`
-- Plain old CSS, powered by
-  - [Every Layout](https://every-layout.dev/) primitives
+- A `style.css` with plain old CSS, powered by
+  - [Every Layout](https://every-layout.dev/) layout primitives
   - CSS variables for colors and spacing
+  - Selectors for the Django [`{{ form.as_div }}` renderer](https://docs.djangoproject.com/en/4.2/ref/forms/api/#as-div)
   - ZERO @media queries 🙌
   - ZERO Bootstrap
   - ZERO TailwindCSS
