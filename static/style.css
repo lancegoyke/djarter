@@ -6,11 +6,16 @@
   --color-light: hsl(0, 0%, 98%);
   --color-dark: hsl(0, 0%, 10%);
   --color-accent: hsl(125, 51%, 28%);
-  --debug: #ddccff;
-  --info: #cceeff;
-  --success: #ccffdd;
-  --warning: #ffddcc;
-  --error: #ffcccc;
+  --debug-light: hsl(260, 100%, 90%);
+  --debug-dark: hsl(260, 100%, 25%);
+  --info-light: hsl(200, 100%, 90%);
+  --info-dark: hsl(200, 100%, 25%);
+  --success-light: hsl(140, 100%, 90%);
+  --success-dark: hsl(140, 100%, 25%);
+  --warning-light: hsl(20, 100%, 90%);
+  --warning-dark: hsl(20, 100%, 25%);
+  --error-light: hsl(0, 100%, 87%);
+  --error-dark: hsl(0, 98%, 25%);
 
   /* modular scale */
   --ratio: 1.3;
