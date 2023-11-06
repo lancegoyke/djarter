@@ -405,6 +405,41 @@ td {
   border-color: var(--color-light);
 }
 
+.messages ul {
+  list-style-type: none;
+  padding-left: unset;
+}
+
+.box.debug {
+  color: var(--debug-dark);
+  background-color: var(--debug-light);
+  border-color: var(--debug-dark);
+}
+
+.box.info {
+  color: var(--info-dark);
+  background-color: var(--info-light);
+  border-color: var(--info-dark);
+}
+
+.box.success {
+  color: var(--success-dark);
+  background-color: var(--success-light);
+  border-color: var(--success-dark);
+}
+
+.box.warning {
+  color: var(--warning-dark);
+  background-color: var(--warning-light);
+  border-color: var(--warning-dark);
+}
+
+.box.error {
+  color: var(--error-dark);
+  background-color: var(--error-light);
+  border-color: var(--error-dark);
+}
+
 /*
   THE SIDEBAR
 
