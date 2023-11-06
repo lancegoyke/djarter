@@ -6,11 +6,16 @@
   --color-light: hsl(0, 0%, 98%);
   --color-dark: hsl(0, 0%, 10%);
   --color-accent: hsl(125, 51%, 28%);
-  --debug: #ddccff;
-  --info: #cceeff;
-  --success: #ccffdd;
-  --warning: #ffddcc;
-  --error: #ffcccc;
+  --debug-light: hsl(260, 100%, 90%);
+  --debug-dark: hsl(260, 100%, 25%);
+  --info-light: hsl(200, 100%, 90%);
+  --info-dark: hsl(200, 100%, 25%);
+  --success-light: hsl(140, 100%, 90%);
+  --success-dark: hsl(140, 100%, 25%);
+  --warning-light: hsl(20, 100%, 90%);
+  --warning-dark: hsl(20, 100%, 25%);
+  --error-light: hsl(0, 100%, 87%);
+  --error-dark: hsl(0, 98%, 25%);
 
   /* modular scale */
   --ratio: 1.3;
@@ -398,6 +403,41 @@ td {
   color: var(--color-light);
   background-color: var(--color-dark);
   border-color: var(--color-light);
+}
+
+.messages ul {
+  list-style-type: none;
+  padding-left: unset;
+}
+
+.box.debug {
+  color: var(--debug-dark);
+  background-color: var(--debug-light);
+  border-color: var(--debug-dark);
+}
+
+.box.info {
+  color: var(--info-dark);
+  background-color: var(--info-light);
+  border-color: var(--info-dark);
+}
+
+.box.success {
+  color: var(--success-dark);
+  background-color: var(--success-light);
+  border-color: var(--success-dark);
+}
+
+.box.warning {
+  color: var(--warning-dark);
+  background-color: var(--warning-light);
+  border-color: var(--warning-dark);
+}
+
+.box.error {
+  color: var(--error-dark);
+  background-color: var(--error-light);
+  border-color: var(--error-dark);
 }
 
 /*

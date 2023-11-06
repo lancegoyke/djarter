@@ -5,7 +5,9 @@
 
 ![Screenshot of `djarter` Django starter template](screenshot-wide.png)
 
-![Screenshot - rendering a form with many types of fields showing even spacing](https://docs.djangoproject.com/en/4.2/ref/forms/api/#as-div)
+![Screenshot - rendering a form with many types of fields showing even spacing](example-form.png)
+
+![Screenshot - Django messages styling](message-styles.png)
 
 Main features:
 
@@ -85,6 +87,7 @@ Then, here are some areas you'll likely want to customize:
   - [Every Layout](https://every-layout.dev/) layout primitives
   - CSS variables for colors and spacing
   - Selectors for the Django [`{{ form.as_div }}` renderer](https://docs.djangoproject.com/en/4.2/ref/forms/api/#as-div)
+  - Styling for `django.contrib.messages`
   - ZERO @media queries 🙌
   - ZERO Bootstrap
   - ZERO TailwindCSS
