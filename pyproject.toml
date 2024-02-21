@@ -1,13 +1,13 @@
 [project]
 name = "djarter"
 description = "A Django starter template"
-version = "2023.11.0"
-requires-python = ">=3.11"
+version = "2024.2.0"
+requires-python = ">=3.12"
 authors = [{ name = "Lance Goyke", email = "lance@lancegoyke.com" }]
 keywords = ["Django"]
 
 [tool.black]
-target-version = ["py311"]
+target-version = ["py312"]
 
 [tool.isort]
 profile = "black"
