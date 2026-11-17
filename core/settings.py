@@ -8,9 +8,15 @@ env.read_env()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = env.bool("DEBUG", default=False)
-SECRET_KEY = env.str(
-    "SECRET_KEY", "django-insecure-rup&uw@m1n0*!v(h5-+dul=nvvnjadr++k_r3c80!+si(ufogn"
-)
+# The insecure fallback is for local development only; with DEBUG off a real
+# SECRET_KEY must be provided, so a deploy can't silently run on a public key.
+if DEBUG:
+    SECRET_KEY = env.str(
+        "SECRET_KEY",
+        "django-insecure-rup&uw@m1n0*!v(h5-+dul=nvvnjadr++k_r3c80!+si(ufogn",
+    )
+else:
+    SECRET_KEY = env.str("SECRET_KEY")
 
 ALLOWED_HOSTS = []
 
@@ -92,9 +98,8 @@ AUTHENTICATION_BACKENDS = [
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = "email"
+ACCOUNT_LOGIN_METHODS = {"email"}
+ACCOUNT_SIGNUP_FIELDS = ["email*", "password1*", "password2*"]
 SITE_ID = 1
 
 # Email
